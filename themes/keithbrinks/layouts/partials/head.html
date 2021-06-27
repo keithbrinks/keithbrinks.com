@@ -1,6 +1,6 @@
 <head>
   <meta charset="utf-8">
-  <title>{{ print .Site.Title " - " .Title }}</title>
+  <title>{{ print .Site.Title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {{ $style := resources.Get "css/style.css" | postCSS | minify | fingerprint }} 
   <link href="{{ $style.RelPermalink }}" rel="stylesheet">
