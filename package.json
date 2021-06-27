@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "prod": "hugo -D --gc"
+    "prod": "hugo -D --cleanDestinationDir --gc"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.6",
