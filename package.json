@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "prod": "hugo -D --cleanDestinationDir --gc"
+    "prod": "hugo -D --cleanDestinationDir --gc --minify"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.6",
