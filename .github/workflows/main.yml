@@ -15,4 +15,4 @@ jobs:
         username: ${{ secrets.FTP_User }}
         password: ${{ secrets.FTP_Password }}
         protocol: ftps
-        server-dir: keithbrinks.com
+        server-dir: keithbrinks.com/
