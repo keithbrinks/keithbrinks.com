@@ -1,0 +1,21 @@
+{{ define "main"}}
+    <main class="container mx-auto px-10 py-20 text-center antialiased">
+        {{ $headshot := resources.Get "/Headshot_3_Square.jpeg" }}
+        <img class="w-40 h-40 rounded-full shadow-lg mx-auto mb-10" alt="Keith Brinks" src="{{ $headshot.RelPermalink }}" />
+        
+        <h1 class="mb-4 text-4xl font-bold">Keith Brinks</h1>
+        
+        <section class="text-lg border-b border-gray-300 pb-10 mb-10">
+            <p class="mb-4">Hello &mdash; I'm a software & business systems developer who works for a manufacturing company based in West Michigan. I build custom and creative solutions to support various business needs and manufacturing processes.</p>
+            <p>You can reach me at <a class="font-bold underline hover:text-blue-600" href="mailto:keith@brinks.me">keith@brinks.me</a>, or connect with me below.</p>
+        </section>
+
+        <section class="flex flex-col md:flex-row justify-center gap-4 md:gap-8">
+            {{ partial "social-link" (dict "title" "Facebook" "url" "https://facebook.com/keithbrinks" "icon" "fa-facebook-square") }}
+            {{ partial "social-link" (dict "title" "Instagram" "url" "https://instagram.com/keithbrinks" "icon" "fa-instagram") }}
+            {{ partial "social-link" (dict "title" "LinkedIn" "url" "https://linkedin.com/in/keithbrinks" "icon" "fa-linkedin") }}
+            {{ partial "social-link" (dict "title" "GitHub" "url" "https://github.com/keithbrinks" "icon" "fa-github") }}
+            {{ partial "social-link" (dict "title" "Steam" "url" "http://steamcommunity.com/id/stargater59/" "icon" "fa-steam-square") }}
+        </section>
+    </main>
+{{ end }}
