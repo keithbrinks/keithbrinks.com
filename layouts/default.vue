@@ -9,7 +9,7 @@
 export default {
     head: {
         bodyAttrs: {
-            class: 'text-gray-800 text-xl p-12'
+            class: 'text-slate-700 p-6 md:p-12 transition-all'
         }
     }
 }
