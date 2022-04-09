@@ -1,7 +1,7 @@
 <template>
   <main>
 
-    <h1 class="text-3xl mb-6 font-extrabold text-sky-600 transition-all">
+    <h1 class="text-2xl md:text-3xl mb-6 font-extrabold text-sky-600 transition-all">
       Lean IT Leader<br>
       Creating Business Value<br>
       Learning Never Ends.
