@@ -19,7 +19,7 @@
     </head>
     <body class="text-slate-700 px-6 md:px-12 pt-12 transition-all h-screen bg-gradient-to-br from-white to-slate-200">
 
-        <div class="max-w-screen-lg mx-auto">
+        <div class="max-w-screen-lg mx-auto relative">
 
             <header class="mb-12">
                 <h1 class="text-2xl font-semibold">
@@ -27,7 +27,7 @@
                 </h1>
             </header>
 
-            <main class="relative">
+            <main>
 
                 <h2 class="text-2xl md:text-3xl mb-6 font-extrabold text-sky-600 transition-all">
                     Lean IT Leader<br>
