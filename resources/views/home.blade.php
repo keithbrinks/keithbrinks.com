@@ -17,7 +17,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         @vite('resources/css/app.css')
     </head>
-    <body class="text-slate-700 px-6 md:px-12 pt-12 transition-all h-screen bg-slate-100">
+    <body class="text-slate-700 px-6 md:px-12 pt-12 transition-all bg-slate-100">
 
         <div class="max-w-screen-lg mx-auto relative">
 
