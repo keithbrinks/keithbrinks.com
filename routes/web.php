@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProfileController;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Route;
 
@@ -13,6 +14,11 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
+Route::domain('app.'. env('APP_URL'))->group(function() {
+    require __DIR__.'/app.php';
+    require __DIR__.'/auth.php';
+})->name('app');
 
 Route::get('/', function () {
     return view('home', [
