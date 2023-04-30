@@ -1,5 +1,9 @@
-<x-app-layout title="Dashboard">
+<x-app-layout title="Dashboard" navParent="dashboard">
 
-    App dashboard
+    <x-slot:header>
+        Dashboard
+    </x-slot:header>
+
+    App dashboard.
 
 </x-app-layout>

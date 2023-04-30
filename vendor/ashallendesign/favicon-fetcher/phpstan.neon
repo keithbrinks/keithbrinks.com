@@ -1,0 +1,16 @@
+includes:
+    - ./vendor/nunomaduro/larastan/extension.neon
+
+parameters:
+
+    paths:
+        - src
+
+    level: 6
+
+    ignoreErrors:
+        - "#^Unsafe usage of new static#"
+        - '#^Call to an undefined method AshAllenDesign\\FaviconFetcher\\Collections\\FaviconCollection::fetch\(\)#'
+        - '#^Call to an undefined method AshAllenDesign\\FaviconFetcher\\Collections\\FaviconCollection::fetchAll\(\)#'
+
+    checkMissingIterableValueType: false

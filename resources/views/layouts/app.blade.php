@@ -9,35 +9,27 @@
 
         @vite('resources/css/app.css')
     </head>
-    <body class="flex">
-        <div class="p-6">
+    <body>
+        <aside class="fixed w-72 p-4">
             <h1 class="text-3xl font-black mb-6">KB</h1>
 
-            <div class="relative group">
-                <button class="sm:hidden bg-sky-600 focus:bg-sky-700 text-white py-1 px-2 rounded"><i class="fa fa-bars"></i></button>
+            <nav>
+                <x-app.nav-link icon="fa fa-home" current-page="{{ $navParent == 'dashboard' }}" href="{{ route('dashboard') }}">Dashboard</x-app.nav-link>
+                <x-app.nav-link icon="fa fa-link" current-page="{{ $navParent == 'links' }}" href="{{ route('links.index') }}">Links</x-app.nav-link>
+                <x-app.nav-link icon="fa fa-scale-balanced" current-page="{{ $navParent == 'balancer' }}" href="{{ route('balancer-sheets.index') }}">Balancer</x-app.nav-link>
+                {{-- Vacation Tracker --}}
+            </nav>
+        </aside>
+        <main class="w-full ml-72 border-l">
             
-                <nav class="w-48 hidden sm:block group-focus-within:block">
-                    <a class="block bg-sky-600 text-white p-2 rounded font-semibold" href="#">
-                        <i class="fa fa-home fa-fw"></i>
-                        Dashboard
-                    </a>
-                    <a class="block p-2 font-semibold hover:text-sky-600" href="#">
-                        <i class="fa fa-link fa-fw"></i>
-                        Links
-                    </a>
-                    <a class="block p-2 font-semibold hover:text-sky-600" href="#">
-                        <i class="fa fa-plane fa-fw"></i>
-                        Vacation Tracker
-                    </a>
-                    <a class="block p-2 font-semibold hover:text-sky-600" href="#">
-                        <i class="fa fa-scale-balanced fa-fw"></i>
-                        Balancer
-                    </a>
-                </nav>
+            <div class="border-b p-4">
+                <h1 class="font-bold">{{ $header }}</h1>
             </div>
-        </div>
-        <main class="p-6">
-            {{ $slot }}
+            
+            <div class="p-4">
+                {{ $slot }}
+            </div>
+
         </main>
     </body>
 </html>

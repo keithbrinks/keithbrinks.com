@@ -1,0 +1,56 @@
+{
+  "name": "ashallendesign/favicon-fetcher",
+  "description": "A Laravel package for fetching website's favicons.",
+  "type": "library",
+  "homepage": "https://github.com/ash-jc-allen/favicon-fetcher",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ash Allen",
+      "email": "mail@ashallendesign.co.uk"
+    }
+  ],
+  "keywords": [
+    "ashallendesign",
+    "favicon-fetcher",
+    "favicon",
+    "icon"
+  ],
+  "require": {
+    "php": "^8.0",
+    "nesbot/carbon": "~2.0",
+    "illuminate/cache": "^8.0|^9.0|^10.0",
+    "illuminate/filesystem": "^8.0|^9.0|^10.0",
+    "illuminate/http": "^8.0|^9.0|^10.0",
+    "guzzlehttp/guzzle": "^7.4"
+  },
+  "require-dev": {
+    "mockery/mockery": "^1.0",
+    "orchestra/testbench": "^6.0|^7.0|^8.0",
+    "phpunit/phpunit": "^8.2 || ^9.0",
+    "nunomaduro/larastan": "^1.0.0|^2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "AshAllenDesign\\FaviconFetcher\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+        "AshAllenDesign\\FaviconFetcher\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "AshAllenDesign\\FaviconFetcher\\FaviconFetcherProvider"
+      ]
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "larastan": "vendor/bin/phpstan analyse"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
