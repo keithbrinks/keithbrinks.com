@@ -39,7 +39,7 @@
                     <img class="w-24 h-24 absolute top-0 right-0 rotate-3 rounded-lg shadow-lg md:relative md:ml-8 md:w-40 md:h-40" src="images/Headshot.png">
                     <div>
                         <p class="text-xl mb-6">
-                            Hi, I'm Keith. With over {{ $experience }} years of IT experience, I’m the IT Manager for a global manufacturing company based in West Michigan. My goal is to simplify every aspect of IT and develop a world-class team who delivers exceptional value through lean and agile methodologies.
+                            Hi, I'm Keith. With over {{ $experience }} years of IT experience, I’m an IT Manager for a global manufacturing company based in West Michigan. My goal is to simplify every aspect of IT and develop a world-class team who delivers exceptional value through lean and agile methodologies.
                         </p>
                         <p class="text-xl">
                             Reach me at <a href="mailto:keith@brinks.me" class="font-semibold underline hover:text-sky-600">keith@brinks.me</a>, or connect with me below.
