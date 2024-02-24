@@ -45,7 +45,6 @@
                             Reach me at <a href="mailto:keith@brinks.me" class="font-semibold underline hover:text-sky-600">keith@brinks.me</a>, or connect with me below.
                         </p>
                         <div class="flex gap-3 mt-6 -ml-2">
-                            <x-social-link href="https://linkedin.com/in/keithbrinks" icon="fa-brands fa-linkedin" />
                             <x-social-link href="https://github.com/keithbrinks" icon="fa-brands fa-github" />
                             <x-social-link href="https://instagram.com/keithbrinks" icon="fa-brands fa-instagram" />
                         </div>
